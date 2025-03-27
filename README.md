@@ -61,39 +61,8 @@ GenHex is designed for developers who want to bootstrap robust Java projects qui
 Try it directly on your browser:  
 [https://www.ene3xt.ai](https://www.ene3xt.ai)
 
+## Open API (Backend)
+[https://api.ene3xt.ai:8443/swagger-ui/index.html](http://api.ene3xt.ai:8443/swagger-ui/index.html)
 ---
 
-## Example Descriptor (Partial)
 
-```json
-{
-  "entityDescriptor": {
-    "packageName": "br.com.myapp",
-    "entityName": "Product",
-    "dtoDescriptor": {
-      "attributes": [
-        {
-          "name": "name",
-          "type": "java.lang.String",
-          "required": true,
-          "maxLength": 100
-        },
-        {
-          "name": "price",
-          "type": "java.lang.Double"
-        }
-      ]
-    },
-    "jpaDescriptor": {
-      "tableName": "products",
-      "attributes": [
-        {
-          "name": "id",
-          "type": "java.lang.Long",
-          "primaryKey": true,
-          "generatedValue": true
-        }
-      ]
-    }
-  }
-}
