@@ -1,68 +1,103 @@
-
-# ene3xt.ai :: java code agent
+# ene3xt.ai :: Java Code Agent
 
 **Generate complete Java projects from natural language descriptions and customizable templates.**  
-GenHex combines **code generation powered by AI** and **template-based architecture with Freemarker**, enabling rapid development aligned with **Clean Code, DDD, and Hexagonal Architecture**.
+GenHex combines **AI-powered code generation** with a **template-driven architecture (Freemarker)**, enabling rapid development aligned with **Clean Code, DDD, and Hexagonal Architecture**.
 
 ---
 
 ## Overview
 
-GenHex is designed for developers who want to bootstrap robust Java projects quickly, while keeping full control over structure and business logic. With GenHex, you can:
+GenHex is built for developers who want to bootstrap robust Java projects in seconds — while keeping full control over structure and business logic. With GenHex, you can:
 
-- Describe entities and business rules in **natural language**
+- Describe entities and business rules using **natural language**
 - Use **custom Freemarker templates** to generate your code
-- Build projects following industry best practices (SOLID, DDD, Clean Architecture)
-- Test the tool visually via the frontend: [https://www.ene3xt.ai](https://www.ene3xt.ai)
+- Follow best practices: **SOLID**, **DDD**, and **Hexagonal Architecture**
+- Explore visually through the frontend: [https://www.ene3xt.ai](https://www.ene3xt.ai)
 
 ---
 
 ## Features
 
-- **Full Project Generation**
+- ✅ **Full Project Generation**
   - JPA Entities
   - DTOs with validations
   - Immutable Domain Models
-  - Converters (DTO-Domain-JPA)
+  - Converters (DTO ⇆ Domain ⇆ JPA)
   - RESTful Controllers
-  - Ports & Adapters (Hexagonal Architecture)
-  - Services and Repositories
+  - Hexagonal Architecture (Ports & Adapters)
+  - Service and Repository Layers
   - Unit and Integration Tests
-  - Auto-generated `pom.xml`
+  - Auto-generated `pom.xml` (Java 17 & Spring Boot)
 
-- **Custom Template Support**
+- 🔁 **Custom Template Support**
   - Upload and use your own `.ftl` Freemarker templates
-  - Define output structure and file paths
-  - Framework-agnostic: generate for any tech stack
+  - Fully control the folder structure and output paths
+  - Framework-agnostic: adapt to any stack or architecture
 
-- **AI-Generated Business Logic**
-  - Natural language rules turned into method bodies
-  - Example: “apply 10% discount if price > 100”
-  - Code is generated respecting clean coding standards
+- 🤖 **AI-Generated Business Logic**
+  - Define custom rules using natural language
+  - Example: _“apply 10% discount if price > 100”_
+  - LLM-generated logic inserted directly into your code
 
-- **Total Flexibility**
-  - JSON-based configuration for full control
-  - Customize packages, class names, attributes
-  - Easy to reuse and version templates and descriptors
+- ⚙️ **Flexible Descriptor System**
+  - JSON-based configuration with fine-grained control
+  - Customize package names, class structure, validations, and more
+  - Reusable and versionable descriptors and templates
 
 ---
 
 ## How It Works
 
-1. **Create a descriptor JSON** with your entities, domain models, DTOs, JPA mappings, and rules.
-2. **Bind your templates** using the standard schema.
-3. **Send the JSON to the REST API** or use the frontend.
-4. **GenHex will generate a complete, working codebase** ready to compile and run.
+1. **Create a descriptor JSON** with your entities, DTOs, JPA definitions, and business rules.
+2. **Map the templates** to be used via schema configuration.
+3. **Send the JSON** to the REST API or use the visual frontend.
+4. **Download the result** – a complete `.zip` project, ready to compile and run.
 
 ---
 
 ## Live Demo (Frontend)
 
-Try it directly on your browser:  
-[https://www.ene3xt.ai](https://www.ene3xt.ai)
+Try the visual interface on your browser:  
+🌐 **[https://www.ene3xt.ai](https://www.ene3xt.ai)**
 
-## Open API (Backend)
-[https://api.ene3xt.ai:8443/swagger-ui/index.html](http://api.ene3xt.ai:8443/swagger-ui/index.html)
 ---
 
+## Open API (Backend)
 
+Access the OpenAPI (Swagger UI) documentation for direct API integration:  
+🔗 **[http://api.ene3xt.ai:8443/swagger-ui/index.html](http://api.ene3xt.ai:8443/swagger-ui/index.html)**
+
+The backend supports standard POST operations where you can submit your JSON descriptor and receive a `.zip` file containing the generated project.
+
+---
+
+## Roadmap
+
+- [x] Core code generation engine
+- [x] AI-assisted business rule logic
+- [x] Custom template support (Freemarker)
+- [x] Frontend for visual interaction
+- [ ] VSCode extension
+- [ ] Template marketplace
+- [ ] GitHub Actions integration
+- [ ] CLI & Local runner
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+
+---
+
+## Author
+
+Developed by **Alexandre M S Lima**  
+Let’s build better tools for developers. Feedback, ideas or questions?  
+📬 Reach out via [https://www.ene3xt.ai](https://www.ene3xt.ai)
+
+---
+
+## Tags
+
+`Java` `Spring Boot` `Hexagonal Architecture` `Code Generation` `LLM` `AI` `Freemarker` `Clean Code` `Open Source` `Dev Tools`
