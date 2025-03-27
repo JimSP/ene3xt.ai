@@ -1,5 +1,5 @@
 
-# GenHex API
+# ene3xt.ai :: java code agent
 
 **Generate complete Java projects from natural language descriptions and customizable templates.**  
 GenHex combines **code generation powered by AI** and **template-based architecture with Freemarker**, enabling rapid development aligned with **Clean Code, DDD, and Hexagonal Architecture**.
