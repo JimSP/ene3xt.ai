@@ -65,7 +65,7 @@ Try the visual interface on your browser:
 ## Open API (Backend)
 
 Access the OpenAPI (Swagger UI) documentation for direct API integration:  
-🔗 **[http://api.ene3xt.ai:8443/swagger-ui/index.html](http://api.ene3xt.ai:8443/swagger-ui/index.html)**
+🔗 **[https://api.ene3xt.ai:8443/swagger-ui/index.html](https://api.ene3xt.ai:8443/swagger-ui/index.html)**
 
 The backend supports standard POST operations where you can submit your JSON descriptor and receive a `.zip` file containing the generated project.
 
